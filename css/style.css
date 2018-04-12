@@ -1,7 +1,7 @@
 
 .nav {
   display: flex;   
-  background-color: #808080;
+  /*background-color: #808080;*/
   flex-wrap: wrap; 
   height: 60px; 
   width: 100%;
