@@ -133,10 +133,25 @@ header {
 }
 .services svg {
   transition: color 225ms;
-  height: 40px;
-  width: 40px;
+  height: 50px;
+  width: 50px;
 }
 .service__list-title {
   margin: 20px 0;
   transition: color 225ms;
+}
+
+.swiper-slide {
+  width: 1000px;
+  height: 100px;
+  background: cadetblue
+}
+.swiper-slide.w {
+  background: red;
+}
+.swiper-slide.q {
+  background: chartreuse
+}
+.swiper-button-next {
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHZlcnNpb249IjEuMSIgaWQ9ItCh0LvQvtC5XzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgNTEyIDUxMiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHBhdGggZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAgICAiIGQ9Ik0zODIuNSw1MTJMMTE1LjcsMjU2TDM4Mi41LDBsMTMuOCwxNC4xTDE0NC4yLDI1NmwyNTIuMSwyNDJMMzgyLjUsNTEyeiIvPjwvc3ZnPg==);
 }

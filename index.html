@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <link href="css/swiper.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <title>Waxom</title>
 </head>
@@ -146,7 +147,42 @@
             </div>
         </div>
     </main>
+    <div class="swiper-container">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide w">Slide 1</div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide q">Slide 3</div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
 
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+    </div>
+    <script src="js/swiper.min.js"></script>
+    <script>
+        new Swiper('.swiper-container', {
+            speed: 400,
+            spaceBetween: 100,
+            loop: true,
+            autoplay: true,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+                clickable: true
+            },
+        });
+    </script>
 </body>
 
 </html>
