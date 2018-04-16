@@ -85,61 +85,74 @@ html {
 header {
     background-image: url("../images/bg-photo.jpg");
   }
-.header {
+  .header {
   width: 100%;
   height: 100vh;
   display: flex;
+  }
+
+.container {
+    display: flex;
+    justify-content: center;
 }
-.services {
+  .services {
   padding-top: 30px;
   padding-bottom: 30px;
   width: 100%;
   max-width: 1200px;
-}
-.container {
-  display: flex;
-  justify-content: center;
-}
-.service-list {
+  }
+
+  .service-list {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    text-align: center;
+  }
+    .service__list-item {
+      position: relative;
+      padding: 0 10px 30px;
+    }
+    .service__list-item::before{
+      content:"";
+      position: absolute;
+      bottom: 0;
+      left: calc(50% - 30px);
+      display:  block;
+      width: 60px;
+      height: 3px;
+      background-color: rgb(6, 7, 7);
+      transition: background-color 225ms;
+    }
+  .service__list-item:hover svg,
+  .service__list-item:hover h3 {
+    fill: currentColor;
+    color:#998675;
+    transition: color 225ms;
+  }
+  .service__list-item:hover::before {
+    background-color: #998675;
+    transition: background-color 225ms;
+  }
+  .services svg {
+    transition: color 225ms;
+    height: 50px;
+    width: 50px;
+  }
+  .service__list-title {
+    margin: 20px 0;
+    transition: color 225ms;
+  }
+
+.purchased_now {
   display: flex;
   flex-direction: row;
-  list-style: none;
-  text-align: center;
+  background-color: #261E1B;
+  height: 120px;
 }
-.service__list-item {
-  position: relative;
-  padding: 0 10px 30px;
-}
-.service__list-item::before{
-  content:"";
-  position: absolute;
-  bottom: 0;
-  left: calc(50% - 30px);
-  display:  block;
-  width: 60px;
-  height: 3px;
-  background-color: rgb(6, 7, 7);
-  transition: background-color 225ms;
-}
-.service__list-item:hover svg,
-.service__list-item:hover h3 {
-  fill: currentColor;
-  color:#998675;
-  transition: color 225ms;
-}
-.service__list-item:hover::before {
-  background-color: #998675;
-  transition: background-color 225ms;
-}
-.services svg {
-  transition: color 225ms;
-  height: 50px;
-  width: 50px;
-}
-.service__list-title {
-  margin: 20px 0;
-  transition: color 225ms;
-}
+  .purchased_now-button {
+    height: 50px;
+    width: 140px;
+  }
 
 .swiper-slide {
   width: 1000px;
@@ -151,7 +164,4 @@ header {
 }
 .swiper-slide.q {
   background: chartreuse
-}
-.swiper-button-next {
-  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHZlcnNpb249IjEuMSIgaWQ9ItCh0LvQvtC5XzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgNTEyIDUxMiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHBhdGggZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAgICAiIGQ9Ik0zODIuNSw1MTJMMTE1LjcsMjU2TDM4Mi41LDBsMTMuOCwxNC4xTDE0NC4yLDI1NmwyNTIuMSwyNDJMMzgyLjUsNTEyeiIvPjwvc3ZnPg==);
 }
