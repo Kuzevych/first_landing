@@ -143,22 +143,10 @@ header {
     transition: color 225ms;
   }
 
-
-
-.purchased_now {
-  display: flex;
-  flex-direction: row;
-  background-color: #261E1B;
-  height: 120px;
-  }
-  .purchased_now-button {
-    height: 50px;
-    width: 140px;
-}
 .browser {
  background-color: #FBFAF8;
  width: 100%;
- height: 800px;
+ height: 750px;
  text-align: center;
 }
   .browser h3{
@@ -180,30 +168,53 @@ header {
   .browser__img img {
     position: relative;
     }
-  
+    
     .browser__img-left {
       top: 70px;
       left: 550px;
-      z-index: 5;
+      z-index: 1;
   }
   .browser__img-right {
       top: 70px;
       right: 550px;
-      z-index: 5;
+      z-index: 1;
   }
   
   .browser__img-center {
       left: 25px;
       z-index: 20;
-  }
-
-.purchased_now {
-  z-index: 700;
-}
-  
-    
+  }    
  
-.swiper-slide {
+  .purchased__now {
+    display: flex;
+    background-color: #261E1B;
+    align-items: center;
+    height: 120px;
+    justify-content: center;
+    
+    }
+
+    .purchased__now-text h3 {
+      color: white;
+    }
+    .purchased__now-text {
+      margin-right: 100px;
+    }
+
+    .purchased__now-button {
+      font-weight: 700;
+      color: white;
+      text-decoration: none;
+      padding: .8em 1em calc(.8em + 3px);
+      border-radius: 3px;
+      background: #998675;
+      transition: 0.2s; 
+    } 
+      .purchased__now-button:hover{
+        background: #998784;
+      }
+
+  .swiper-slide {
   width: 1000px;
   height: 100px;
   background: cadetblue
