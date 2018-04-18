@@ -143,17 +143,42 @@ header {
     transition: color 225ms;
   }
 
+
+
 .purchased_now {
   display: flex;
   flex-direction: row;
   background-color: #261E1B;
   height: 120px;
-}
+  }
   .purchased_now-button {
     height: 50px;
     width: 140px;
+}
+.browser {
+ background-color: #FBFAF8;
+ width: 100%;
+ height: 900px;
+ text-align: center;
+}
+  .browser h3{
+    padding: 40px 0;
   }
+  
+  .browser p {
+    margin: auto 150px;
+  } 
 
+   .browser__img {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 40px;
+  } 
+  .browser__img-align {
+
+  }
+ 
 .swiper-slide {
   width: 1000px;
   height: 100px;
@@ -163,5 +188,5 @@ header {
   background: red;
 }
 .swiper-slide.q {
-  background: chartreuse
+  background: chartreuse;
 }
