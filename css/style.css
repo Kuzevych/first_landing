@@ -201,6 +201,11 @@ header {
       margin-right: 100px;
     }
 
+    .purchased__now-text p {
+      margin: 10px auto;
+      color: #564C47;
+    }
+
     .purchased__now-button {
       font-weight: 700;
       color: white;
@@ -211,7 +216,7 @@ header {
       transition: 0.2s; 
     } 
       .purchased__now-button:hover{
-        background: #998784;
+        background: #504442;
       }
 
   .swiper-slide {
