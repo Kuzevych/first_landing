@@ -160,8 +160,8 @@ header {
    .browser__img {
     display: flex;
     flex-direction: row;
-    justify-content: center;
     padding-top: 40px;
+    justify-content: center;
     position: relative;
     overflow: hidden;
   } 
@@ -190,9 +190,8 @@ header {
     display: flex;
     background-color: #261E1B;
     align-items: center;
-    height: 120px;
+    height: 170px;
     justify-content: center;
-    
     }
 
     .purchased__now-text h3 {
