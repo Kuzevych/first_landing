@@ -259,35 +259,3 @@ header {
             border-color: white;
           }
         
-  .projects-last {
-    margin: 50px 70px;
-  }
-          
-    .projects__last-example {
-      height: 370px;
-      width: 370px;
-      background-color: #FBFAF8;
-    }
-                
-     .projects__last-text {
-       margin: auto 30px;
-     } 
-    
-      .projects__last-text h4 {
-        color: #BEA788;
-      }
-        
-      .projects__last-text p {
-        color: #D5D5D5;
-      }
-        
-    .projects-work-1 {
-      z-index: 1;
-    }
-        
-    .projects-work-warr {
-      position: relative;
-      bottom: 17px;
-      left: 15px;
-      z-index: 2;
-    }    
