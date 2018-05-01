@@ -84,6 +84,7 @@ html {
     
 header {
     background-image: url("../images/bg-photo.jpg");
+    background-attachment: fixed;
   }
   .header {
   width: 100%;
@@ -190,7 +191,7 @@ header {
     display: flex;
     background-color: #261E1B;
     align-items: center;
-    height: 110px;
+    height: 120px;
     justify-content: center;
     }
 
@@ -252,14 +253,17 @@ header {
           border: 2px solid #F0F0F0;
           border-radius: 8px;
           background: #FEFEFE;
-          transition: 200ms; 
-          margin-right: 15px;
+          transition: 200ms;
         } 
           .projects-button-but:hover{
             background: #998675;
             color: #FFFFFF;
             border-color: white;
           }
+
+        .projects-button-but + .projects-button-but {
+          margin-left: 15px;
+        }
 
   .row {
     display: flex;
@@ -302,7 +306,7 @@ header {
     height: 100%;
     left: 0;
     top: 0;
-    background-color: rgba(0,0,0,.4);
+    background-color: rgba(0,0,0,.4);  
     transition: background-color 200ms;
     z-index: 2;
   }
@@ -331,6 +335,7 @@ header {
   }
 
   .portfolio-image img{
+    display: inline-block;
     width: 100%;
     height: auto;
     z-index: 1;
@@ -351,7 +356,6 @@ header {
     border-radius: 7px;
     background: #998675;
     transition: 200ms; 
-    margin-right: 15px;
    } 
     .load-more-button:hover{
       background: #372F2D;
