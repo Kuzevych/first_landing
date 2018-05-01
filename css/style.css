@@ -264,10 +264,16 @@ header {
     margin: 25px 70px;
     height: 370px;
     width: 370px;
+    padding: 10px;
   }
 
   .col {
     background-color: #FBFAF8;
+    padding: 10px;
+  }
+
+  .col:hover {
+    background-color: #372F2D;
   }
 
   .portfolio-item {
@@ -277,8 +283,17 @@ header {
     padding-left: 25px;
     color: #C6B196;
   }
+
+  .portfolio-item__info h3:hover { 
+    color: #E6E5E3;
+  }
+
   .portfolio-item__info p {
     padding-left: 25px;
     color: #E6E6E4;
+  }
+
+  .portfolio-item__info p:hover {
+    color: #C4B097;
   }
         
