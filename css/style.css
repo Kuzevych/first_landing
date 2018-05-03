@@ -269,7 +269,7 @@ header {
     display: flex;
     margin: 25px auto; 
     flex-wrap: wrap;
-    width: 100%;
+    width: 70%;
   }
 
   .col {
@@ -361,5 +361,13 @@ header {
       background: #372F2D;
       color: #FFFFFF;
       border-color: rgb(65, 14, 14);
-    }
+}
  
+.mobile {
+  height: 750px;
+  width: 100%;
+  background-color: yellow; 
+  background-image: url("../images/iPhone_in_hand.png");
+  background-repeat: no-repeat;
+  background-position: right 77% bottom;
+}
