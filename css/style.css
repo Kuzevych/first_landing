@@ -389,3 +389,68 @@ header {
     position: relative;
     left: 15%;
 }
+
+.counters {
+ display: flex;
+ flex-direction: row;
+ background-color: #281E1C;
+  
+}
+
+  .counters-item {
+    display: flex;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-left: 25%;
+    margin-right: 25%;
+    width: 100%;
+    max-width: 1200px;
+  }
+
+  .counters-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+    text-align: center;
+    width: 100%;
+  }
+  .counters__list-item {
+    position: relative;
+    padding: 0 10px 30px;
+  }
+
+  .counters__list-item + .counters__list-item {
+    margin-left: 15px;
+  }
+
+  .counters__list-item svg {
+    fill: #D3BEA3;
+   
+  }
+
+  .counters__list-title {
+    font-size: 40px;
+    color: #FFFDFE;
+  }
+
+  .counters__list-text {
+    font-size: 13px;
+    color: #A6947E
+  }
+   .counters__list-item::before{
+    content:"";
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - 20px);
+    display:  block;
+    width: 35px;
+    height: 3px;
+    background-color: #D8C3A7;
+    transition: background-color 225ms;
+  } 
+
+  .counters__list-title {
+   margin: 20px 0;
+  transition: color 225ms;
+  }
