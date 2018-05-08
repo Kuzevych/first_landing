@@ -396,7 +396,6 @@ header {
  background-color: #281E1C;
   
 }
-
   .counters-item {
     display: flex;
     padding-top: 30px;
@@ -455,13 +454,31 @@ header {
   transition: color 225ms;
   }
 
+.posts {
+  height: 550px;
+  width: 100%;
+  background-color: steelblue;
+}
+
+  .posts_text {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+  }
+
+  .posts__text-words {
+    padding: 10px 100px;
+    line-height: 23px;
+    color: #C3C3C3;
+  }
+
 .brands {
     display: flex;
     width: 100%;
     height: 350px; 
     justify-content: center;
     background-image: url("../images/brands/bg.png");
-}
+  }
 
   .brands-container {
     margin: auto 16%;
@@ -473,4 +490,4 @@ header {
 
   .brands-image + .brands-image {
     margin-left: 50px;
-  }
+}
