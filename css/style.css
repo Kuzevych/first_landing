@@ -17,8 +17,8 @@ html {
   width: 100%;
   position: fixed;  
   padding: 40px 0;
-
   }
+
     .nav__container {
         display: flex;   
         align-items: center;
